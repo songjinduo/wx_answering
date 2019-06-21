@@ -18,7 +18,7 @@
     >>* prc_all——题目刷题功能
     >>* python(2、3、4、5）——随机选择题目并提供答题界面与功能
     >>* wrong_set——错题搜集功能
- * packageB——存放有关Echarts可视化功能的界面
+* packageB——存放有关Echarts可视化功能的界面
   >* ec-canvas——Echarts图表的库文件
   >* image——存放背景图片
   >* pages——存放使用Echarts库的界面文件
