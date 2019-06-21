@@ -28,3 +28,27 @@
 * 微信web开发者工具
 
 ##### 运行截图展示
+
+* 主界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/1.jpg)
+
+* 随机答题界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/2.jpg)
+
+* 题库刷题界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/3.jpg)
+
+* 错题集界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/4.jpg)
+
+* 收藏夹界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/5.jpg)
+
+* 个人答题情况可视化界面
+
+![image](https://github.com/songjinduo/wx_answering/blob/master/images/6.jpg)
