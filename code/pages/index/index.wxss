@@ -1,0 +1,84 @@
+/**index.wxss**/
+
+.header {
+  position: fixed;
+  top: 0;
+  height: 100rpx;
+  width: 100%;
+  /*background-color: red;*/
+  border-radius: 0 0 80% 80%;
+}
+.masked {
+            margin-top: 100rpx;
+            text-align: center;
+            display: block;
+            /*渐变背景*/
+            background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+            #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+            color: transparent; /*文字填充色为透明*/
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;          /*背景剪裁为文字，只将文字显示为背景*/
+            background-size: 200% 100%;            /*背景图片向水平方向扩大一倍，这样background-position才有移动与变化的空间*/
+            /* 动画 */
+            animation: masked-animation 4s infinite linear;
+        }
+        @keyframes masked-animation {
+            0% {
+                background-position: 0 0;   /*background-position 属性设置背景图像的起始位置。*/
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+
+.userinfo {
+  display: flex;
+  border-radius: 5rpx;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100rpx;
+}
+
+.userinfo-avator-wrap {
+  width: 134rpx;
+  height: 134rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f8f7f7;
+  top:50px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  top: 50px;
+}
+
+.userinfo-nickname {
+  color: #ccc;
+  top:50px;
+}
+
+.usermotto {
+  margin-top: 100rpx;
+  text-align: center;
+}
+ 
+.navigator {
+  padding: 40rpx;
+  text-align: center;
+  color: #CDB03B;
+}
+
+.navigator-hover {
+  color: blue;
+}
+.none{
+  display: none
+}
+.block{
+  display: block
+}

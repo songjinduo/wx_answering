@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subpackages":[
+    {
+      "root": "packageA",
+      "pages":[
+        "pages/logs/logs",
+        "pages/python/python",
+        "pages/python2/python",
+        "pages/python3/python",
+        "pages/python4/python",
+        "pages/python5/python",
+        "pages/collection/collection",
+        "pages/wrong_set/wrong_set",
+        "pages/prc_all/prc_all"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages":[
+        "pages/echarts/echarts"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "毛概答题",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light"
+  },
+  "debug": false
+}

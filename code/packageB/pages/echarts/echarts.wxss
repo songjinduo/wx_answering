@@ -1,0 +1,17 @@
+/* pages/echarts/echarts.wxss */
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: absolute;
+  top: 0rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 

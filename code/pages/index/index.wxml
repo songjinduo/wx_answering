@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="main" >
+<view style="background: url({{background}}) center center no-repeat; width:100%; height:100%; background-size: cover; top:50px; justify-content: center;">
+  <view class="header"></view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style='top: 50px'> 获取头像昵称 </button>
+    <block wx:else>
+      <view class="userinfo-avator-wrap">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </view>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="masked" style="text_align: center">{{motto}}</text>
+    
+    <navigator data-num="1" class="navigator {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'block':''}}" bindtap="menuClick1" url="../../packageA/pages/python/python" hover-class="navigator-hover">{{enter}}</navigator>
+     <navigator data-num="2" class="navigator none {{_num==1?'block':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick2"  url="../../packageA/pages/python2/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="3" class="navigator none  {{_num==1?'none':''}} {{_num==2?'block':''}} {{_num==3?'none':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick3"  url="../../packageA/pages/python3/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="4" class="navigator none  {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'block':''}} {{_num==4?'none':''}} {{_num==5?'none':''}}" bindtap="menuClick4"  url="../../packageA/pages/python4/python" hover-class="navigator-hover">{{enter}}</navigator>
+    <navigator data-num="5" class="navigator none  {{_num==1?'none':''}} {{_num==2?'none':''}} {{_num==3?'none':''}} {{_num==4?'block':''}} {{_num==5?'none':''}}" bindtap="menuClick5"  url="../../packageA/pages/python5/python" hover-class="navigator-hover">{{enter}}</navigator>
+   
+    <navigator style = "color: #CDB03B;" url="../../packageA/pages/prc_all/prc_all" hover-class="navigator-hover">题库刷题</navigator>
+
+   <navigator style = "color: #CDB03B; padding: 40rpx" url="../../packageA/pages/wrong_set/wrong_set" hover-class="navigator-hover">错题集</navigator>
+   
+   <navigator style = "color: #CDB03B;" url="../../packageA/pages/collection/collection" hover-class="navigator-hover">收藏夹</navigator>
+
+   
+  </view>
+</view>
+</view>
